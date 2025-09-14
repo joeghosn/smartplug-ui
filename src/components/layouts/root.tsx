@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
+import { Toaster } from "../ui/sonner";
 
-export default function RootLayout() {
+export default function Root() {
   return (
     <div className="">
       <main className="">
@@ -8,6 +9,7 @@ export default function RootLayout() {
           <Outlet />
         </div>
       </main>
+      <Toaster />
     </div>
   );
 }
